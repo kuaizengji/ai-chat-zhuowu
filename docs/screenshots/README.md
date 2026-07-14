@@ -15,6 +15,11 @@
 1. `live-home.png`：公网首页可访问截图
 2. `live-chat.png`：公网聊天成功截图
 3. `merged-pr.png`：GitHub 上已 merged 的 PR 页面截图
+4. `ssh-connected-terminal.png`：截图①，SSH 连上服务器后的终端证据图
+5. `backend-startup-log.png`：截图②，后端重启与启动日志
+6. `network-api-chat.png`：截图③，基于一次真实 `/api/chat` POST 请求生成的网络证据图
+7. `hotspot-public-access.png`：截图④，当前电脑连接到手机热点 `卓武的Mate 70 Pro` 时访问公网地址的证据图
+8. `merged-pr-browser.png`：截图⑤，自己仓库里 merged PR 的浏览器页面
 
 ## 验收时你要能解释的点
 
