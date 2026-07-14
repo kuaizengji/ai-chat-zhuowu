@@ -86,7 +86,17 @@ function resetChat() {
   showWelcome();
 }
 
+function handleComposerKeydown(event) {
+  if (event.key !== "Enter" || event.shiftKey) {
+    return;
+  }
+
+  event.preventDefault();
+  form.requestSubmit();
+}
+
 form.addEventListener("submit", submitMessage);
 resetButton.addEventListener("click", resetChat);
+input.addEventListener("keydown", handleComposerKeydown);
 
 showWelcome();
