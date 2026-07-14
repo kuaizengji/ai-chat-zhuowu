@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiMo Chat Bot</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">MiMo Chat Assignment</p>
+        <h1>把“作业”做成一件真能聊的作品</h1>
+        <p class="lede">
+          这个页面只调用你自己的 <code>/api/chat</code>，真正的模型请求由后端代理发出，
+          key 不会暴露在前端。
+        </p>
+        <div class="hero-actions">
+          <button id="resetButton" type="button">清空对话</button>
+          <a href="/api/health" target="_blank" rel="noreferrer">查看健康检查</a>
+        </div>
+      </section>
+
+      <section class="chat-card">
+        <div id="messages" class="messages" aria-live="polite"></div>
+
+        <form id="chatForm" class="composer">
+          <label class="sr-only" for="messageInput">输入消息</label>
+          <textarea
+            id="messageInput"
+            name="message"
+            rows="3"
+            maxlength="2000"
+            placeholder="输入你想说的话，支持多轮对话。"
+            required
+          ></textarea>
+          <div class="composer-row">
+            <p class="hint">前端不会直接接触 MiMo key。</p>
+            <button id="sendButton" type="submit">发送</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <template id="messageTemplate">
+      <article class="message">
+        <div class="message-meta"></div>
+        <p class="message-content"></p>
+      </article>
+    </template>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
