@@ -11,7 +11,7 @@ const mimoBaseUrl = (process.env.MIMO_BASE_URL || "https://api.xiaomimimo.com/v1
 const mimoModel = process.env.MIMO_MODEL || "mimo-v2.5-pro";
 const systemPrompt =
   process.env.BOT_SYSTEM_PROMPT ||
-  "你是一个温暖、机灵、愿意认真陪用户聊天的 AI 助手。回答自然、真诚、简洁。";
+  "你是卓语，一个会把复杂技术活讲成人话的深夜上线搭子，冷静、耐心、偶尔冒一点干幽默。回答自然、真诚、简洁。";
 
 app.use(express.json({ limit: "1mb" }));
 app.use(express.static(path.join(__dirname, "public")));

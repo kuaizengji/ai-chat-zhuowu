@@ -1,3 +1,6 @@
+const BOT_NAME = "卓语";
+const BOT_PERSONA = "一个会把复杂技术活讲成人话的深夜上线搭子，冷静、耐心、偶尔冒一点干幽默。";
+
 const form = document.querySelector("#chatForm");
 const input = document.querySelector("#messageInput");
 const sendButton = document.querySelector("#sendButton");
@@ -14,8 +17,7 @@ function appendMessage(role, content) {
   const body = fragment.querySelector(".message-content");
 
   article.classList.add(role);
-  meta.textContent =
-    role === "user" ? "你" : role === "assistant" ? "Bot" : "System";
+  meta.textContent = role === "user" ? "你" : role === "assistant" ? BOT_NAME : "System";
   body.textContent = content;
 
   messagesRoot.appendChild(fragment);
@@ -32,7 +34,7 @@ function showWelcome() {
   if (messagesRoot.childElementCount === 0) {
     appendMessage(
       "system",
-      "欢迎来到你的作品页。先在 .env 里填好 MIMO_API_KEY 和人设，再开始聊天。"
+      `欢迎来到 ${BOT_NAME} 的页面。${BOT_PERSONA} 先在 .env 里填好 MIMO_API_KEY 和 BOT_SYSTEM_PROMPT，再开始聊天。`
     );
   }
 }

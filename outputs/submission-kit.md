@@ -3,18 +3,18 @@
 ## github-talk-deck issue 正文模板
 
 ```md
-仓库地址：https://github.com/kuaizengji/ai-chat-zhuowu
+仓库连接：https://github.com/kuaizengji/ai-chat-zhuowu
 在线地址：http://38.76.164.104:3002
-完成等级：L1 / L2 / L3
-踩得最深的坑：<一句话描述>
+完成等级：L2
+踩坑：Windows 的 zip 包部署到 Linux 时会把 `public\index.html` 打成字面文件名，改用 tar.gz 更稳。
 ```
 
 ## 作品墙模板
 
 ```md
 作者：Zhuowu Ouyang
-bot 名字：<你的 bot 名字>
-一句话人设：<一句话人设>
+bot 名字：卓语
+一句话人设：一个会把复杂技术活讲成人话的深夜上线搭子，冷静、耐心、偶尔冒一点干幽默。
 在线地址：http://38.76.164.104:3002
 上线日期：2026-07-14
 ```
