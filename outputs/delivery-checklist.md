@@ -22,7 +22,7 @@
 - [x] 1 个分支 `feat/xxx`
 - [x] 1 个 merged PR
 - [x] PR 描述里写了 `Closes #编号`
-- [ ] follow 骐畅
+- [x] follow 骐畅（Anna Looper）
 
 ## 提交材料
 
@@ -38,6 +38,5 @@
 
 ## 当前仍受阻的点
 
-- [ ] GitHub 凭据目前无法完成 follow 动作
 - [ ] `github-talk-deck` 账号权限只有 pull，不能直接改共享仓库文件
-- [ ] 当前提供的 SSH 密码无法再次登录服务器，因此没法补服务器侧 `gh auth login` 和直连 MiMo 的最新留痕
+- [ ] 绑定 Wi-Fi 出口后已可到达 SSH 密码认证，但 `806698332` 登录返回 `Permission denied (password)`，仍需正确的当前新密码

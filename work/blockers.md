@@ -14,9 +14,9 @@ Date: 2026-07-14
 
 ## Remaining External Blockers
 
-- The GitHub credential available on this machine can edit the submission issue, but follow `Guoqichang` returns `404`, which strongly suggests missing follow scope.
 - The account only has `pull` permission on `kuaizengji/github-talk-deck`, so it cannot directly edit any shared wall/checklist files in that repo.
-- The currently provided SSH passwords no longer authenticate, so fresh server-side proof for `gh auth login` and direct `curl` to MiMo could not be captured again in this turn.
+- The user confirmed follow is complete via Anna Looper, so that checklist item is no longer blocked.
+- Binding SSH to the Wi-Fi address bypassed the `Meta Tunnel` path and reached password auth successfully, but the provided password `806698332` was rejected by the server.
 
 ## Current Runtime Assumptions
 
